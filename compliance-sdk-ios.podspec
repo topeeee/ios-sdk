@@ -65,15 +65,22 @@ Pod::Spec.new do |spec|
   spec.source_files = "Sources/**/*.{swift}"
   spec.swift_version = "5.0"
 
-  spec.resource_bundles = {
-    'ComplianceSDK' => [
-      'Sources/compliance-sdk-ios/Fonts/Millik.otf',
-      'Sources/compliance-sdk-ios/Fonts/Moderat-Bold.ttf',
-      'Sources/compliance-sdk-ios/Fonts/Moderat-Light.ttf',
-      'Sources/compliance-sdk-ios/Fonts/Moderat-Medium.ttf',
-      'Sources/compliance-sdk-ios/Fonts/Moderat-Regular.ttf',
-      'Sources/**/*.xcassets'
-    ]
+#   spec.resource_bundles = {
+#     'ComplianceSDK' => [
+#       'Sources/compliance-sdk-ios/Fonts/Millik.otf',
+#       'Sources/compliance-sdk-ios/Fonts/Moderat-Bold.ttf',
+#       'Sources/compliance-sdk-ios/Fonts/Moderat-Light.ttf',
+#       'Sources/compliance-sdk-ios/Fonts/Moderat-Medium.ttf',
+#       'Sources/compliance-sdk-ios/Fonts/Moderat-Regular.ttf',
+#       'Sources/**/*.xcassets'
+#     ]
+#   }
+spec.resource_bundles = {
+    'ComplianceSDK' => ['Sources/compliance-sdk-ios/Fonts/*', 'Sources/**/*.xcassets']
   }
+
+# spec.resource_bundles = {
+#     'ComplianceSDK' => ['Sources/**/*.xcassets', 'Sources/**/*.ttf', 'Sources/**/*.otf']
+#   }
 end
 
