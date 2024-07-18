@@ -119,7 +119,8 @@ public class ComplianceSDK {
             } else {
                 fontExtension = "ttf"
             }
-            registerFont(bundle: .module, fontName: $0.rawValue, fontExtension: fontExtension)
+//            registerFont(bundle: .module, fontName: $0.rawValue, fontExtension: fontExtension)
+            registerFont(bundle: Bundle(for: ComplianceSDK.self), fontName: $0.rawValue, fontExtension: fontExtension)
         }
     }
 

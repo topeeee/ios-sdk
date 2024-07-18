@@ -11,18 +11,18 @@ Pod::Spec.new do |spec|
 
 
   spec.author             = { "tope" => "tajibuwa@gmail.com" }
-  
+
   spec.platform     = :ios, "16.0"
 
   spec.source       = { :git => "https://github.com/topeeee/ios-sdk.git", :tag => spec.version.to_s }
 
 
-  spec.source_files  = "ios-sdk/**/*.{swift}"
-  
+  spec.source_files  = "Sources/**/*.{swift}"
+
   spec.swift_version = "5.0"
 
-  # spec.resource  = "icon.png"
-  # spec.resources = "Resources/*.png"
+#   spec.resource  = "icon.png"
+#   spec.resources = "Resources/*.png"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
