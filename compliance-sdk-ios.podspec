@@ -58,7 +58,7 @@ Pod::Spec.new do |spec|
   spec.description  = "This is a compliance SDK that is used in phones to ensure all users pass all the compliance and KYC checks."
 
   spec.homepage     = "https://github.com/topeeee/ios-sdk"
-  spec.license      = { :type => "MIT", :file => 'LICENSE.txt' }
+  spec.license      = { :type => "MIT", :file => 'LICENSE' }
   spec.author       = { "tope" => "tajibuwa@gmail.com" }
   spec.platform     = :ios, "16.0"
   spec.source       = { :git => "https://github.com/topeeee/ios-sdk.git", :tag => spec.version.to_s }
