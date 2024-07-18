@@ -1,13 +1,13 @@
 Pod::Spec.new do |spec|
 
-  spec.name         = "ComplianceSdk"
+  spec.name         = "compliance-sdk-ios"
   spec.version      = "1.0.0"
-  spec.summary      = "A short description of ComplianceSdk for making sure user pass compliance"
+  spec.summary = "A compliance SDK ensuring users pass all KYC and compliance checks."
   spec.description  = "This is a compliance sdk that in use in phones to make use all the users using it pass all the compliance and kyc"
 
   spec.homepage     = "https://github.com/topeeee/ios-sdk"
 
-  spec.license      = "MIT"
+  spec.license      = { :type => "MIT", :file => 'LICENSE.txt' }
 
 
   spec.author             = { "tope" => "tajibuwa@gmail.com" }
@@ -20,6 +20,10 @@ Pod::Spec.new do |spec|
   spec.source_files  = "Sources/**/*.{swift}"
 
   spec.swift_version = "5.0"
+
+  spec.resource_bundles = {
+    'ComplianceSDK' => ['Sources/**/*.xcassets', 'Sources/**/*.ttf', 'Sources/**/*.otf']
+  }
 
 #   spec.resource  = "icon.png"
 #   spec.resources = "Resources/*.png"
