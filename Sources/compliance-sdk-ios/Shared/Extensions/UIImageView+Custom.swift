@@ -54,7 +54,7 @@ public extension UITextField {
             let theme = ComplianceSDK.shared.configuration.theme
             let caret = UIImageView()
             caret.frame = CGRect(x: 0, y: 0, width: theme.space.one, height: theme.space.one)
-            caret.image = UIImage(named: "chevron_right", bundle: Bundle(for: ComplianceSDK.self))
+            caret.image = UIImage(name: "chevron_right", bundle: Bundle(for: ComplianceSDK.self))
             self.rightView = caret
             self.rightViewMode = .always
         }
