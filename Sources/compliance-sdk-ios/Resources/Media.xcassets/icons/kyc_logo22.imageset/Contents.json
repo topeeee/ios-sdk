@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "kyc_logo22.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
