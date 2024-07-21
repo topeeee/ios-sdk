@@ -53,7 +53,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "compliance-sdk-ios"
-  spec.version      = "1.0.4"
+  spec.version      = "1.0.6"
   spec.summary      = "A compliance SDK ensuring users pass all KYC and compliance checks."
   spec.description  = "This is a compliance SDK that is used in phones to ensure all users pass all the compliance and KYC checks."
 
@@ -76,7 +76,7 @@ Pod::Spec.new do |spec|
 #     ]
 #   }
 spec.resource_bundles = {
-    'ComplianceSDK' => ['Sources/compliance-sdk-ios/Fonts/*', 'Sources/**/*.xcassets']
+    'compliance-sdk-ios' => ['Sources/compliance-sdk-ios/Fonts/*', 'Sources/**/*.xcassets']
   }
 
 # spec.resource_bundles = {
